@@ -4,7 +4,7 @@ import { LogStats, RoutingRecord, Tier } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_FILE = path.join(DATA_DIR, "logs.json");
-const MAX_RECORDS = 500;
+const MAX_RECORDS = 400;
 
 function ensureStore(): void {
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });

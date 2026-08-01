@@ -79,7 +79,7 @@ function countHints(text: string, hints: string[]): number {
 
 function estimateTokens(text: string): number {
   // Rough heuristic: ~4 characters per token.
-  return Math.max(8, Math.round(text.length / 4));
+  return Math.max(7, Math.round(text.length / 4));
 }
 
 export function classifyPrompt(prompt: string): ClassificationResult {
