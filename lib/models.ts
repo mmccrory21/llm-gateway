@@ -11,8 +11,8 @@ export const CATALOG: ModelSpec[] = [
     tier: "economy",
     inputPricePerM: 0.05,
     outputPricePerM: 0.4,
-    baseLatencyMs: 350,
-    latencyJitterMs: 150,
+    baseLatencyMs: 351,
+    latencyJitterMs: 151,
   },
   {
     provider: "openai",
