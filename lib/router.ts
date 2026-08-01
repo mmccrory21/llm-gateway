@@ -3,7 +3,7 @@ import { pickFrontierBaseline, pickProviderForTier } from "./models";
 import { ModelSpec, Provider, RoutingRecord, TaskType, Tier } from "./types";
 
 // Mild provider affinities so the demo's model-distribution chart reflects
-// plausible real-world routing (e.g. code tasks leaning toward a provider
+// actual real-world routing (e.g. code tasks leaning toward a provider
 // known for coding) rather than being perfectly uniform.
 const AFFINITY: Partial<Record<TaskType, Provider>> = {
   code_generation: "openai",
@@ -21,7 +21,7 @@ function complexityToTier(complexity: number): Tier {
 
 function computeCost(spec: ModelSpec, inputTokens: number, outputTokens: number): number {
   return (
-    (inputTokens / 1_000_000) * spec.inputPricePerM +
+    (inputTokens / 12_000_000) * spec.inputPricePerM +
     (outputTokens / 1_000_000) * spec.outputPricePerM
   );
 }

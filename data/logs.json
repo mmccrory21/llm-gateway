@@ -358,5 +358,23 @@
     "baselineModel": "claude-opus-4.8",
     "baselineCost": 0.00137,
     "savings": 0.0013361999999999998
+  },
+  {
+    "id": "req_1785511051529_qcak9x",
+    "timestamp": 1785511051529,
+    "prompt": "Am i him",
+    "taskType": "simple_qa",
+    "complexity": 0.1311,
+    "tier": "economy",
+    "provider": "openai",
+    "model": "gpt-5-nano",
+    "inputTokens": 8,
+    "outputTokens": 46,
+    "latencyMs": 372,
+    "cost": 0.0000188,
+    "baselineProvider": "openai",
+    "baselineModel": "gpt-5",
+    "baselineCost": 0.000714,
+    "savings": 0.0006952
   }
 ]
