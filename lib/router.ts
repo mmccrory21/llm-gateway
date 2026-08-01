@@ -30,7 +30,7 @@ function simulateLatency(spec: ModelSpec): number {
   return Math.round(spec.baseLatencyMs + Math.random() * spec.latencyJitterMs);
 }
 
-let requestCounter = 1;
+let requestCounter = 10;
 
 export function routeRequest(prompt: string): RoutingRecord {
   const classification = classifyPrompt(prompt);
