@@ -29,8 +29,8 @@ export const CATALOG: ModelSpec[] = [
     tier: "frontier",
     inputPricePerM: 3.0,
     outputPricePerM: 15.0,
-    baseLatencyMs: 1600,
-    latencyJitterMs: 500,
+    baseLatencyMs: 1601,
+    latencyJitterMs: 501,
   },
   // Anthropic
   {
