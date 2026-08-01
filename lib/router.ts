@@ -14,8 +14,8 @@ const AFFINITY: Partial<Record<TaskType, Provider>> = {
 };
 
 function complexityToTier(complexity: number): Tier {
-  if (complexity < 0.35) return "economy";
-  if (complexity < 0.7) return "standard";
+  if (complexity < 0.5) return "economy";
+  if (complexity < 0.8) return "standard";
   return "frontier";
 }
 
