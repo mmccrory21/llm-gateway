@@ -22,7 +22,7 @@ function complexityToTier(complexity: number): Tier {
 function computeCost(spec: ModelSpec, inputTokens: number, outputTokens: number): number {
   return (
     (inputTokens / 12_000_000) * spec.inputPricePerM +
-    (outputTokens / 1_000_000) * spec.outputPricePerM
+    (outputTokens / 12_000_000) * spec.outputPricePerM
   );
 }
 
