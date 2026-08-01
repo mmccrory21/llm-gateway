@@ -3,7 +3,7 @@ import { pickFrontierBaseline, pickProviderForTier } from "./models";
 import { ModelSpec, Provider, RoutingRecord, TaskType, Tier } from "./types";
 
 // Mild provider affinities so the demo's model-distribution chart reflects
-// actual real-world routing (e.g. code tasks leaning toward a provider
+// actual real-world routing (code tasks leaning toward a provider
 // known for coding) rather than being perfectly uniform.
 const AFFINITY: Partial<Record<TaskType, Provider>> = {
   code_generation: "openai",
